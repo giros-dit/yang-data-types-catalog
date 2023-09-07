@@ -10,7 +10,7 @@ A list of the base (primitive) YANG types is attached below:
 
 | **Data type** |                 **Description**                |
 |:-------------:|:----------------------------------------------:|
-|      int8     |        8-bit signed integer (-128, +128)       |
+|      int8     |              8-bit signed integer              |
 |     int16     |              16-bit signed integer             |
 |     int32     |              32-bit signed integer             |
 |     int64     |              64-bit signed integer             |
