@@ -1,0 +1,21 @@
+{
+  "interfaces-ios-xe-oper:qos-match-type": "enumeration",
+  "interfaces-ios-xe-oper:thresh-unit": "enumeration",
+  "interfaces-ios-xe-oper:qos-direction": "enumeration",
+  "interfaces-ios-xe-oper:aggregation-type": "enumeration",
+  "interfaces-ios-xe-oper:intf-state": "enumeration",
+  "interfaces-ios-xe-oper:ether-duplex": "enumeration",
+  "interfaces-ios-xe-oper:ether-speed": "enumeration",
+  "interfaces-ios-xe-oper:qos-direction": "enumeration",
+  "interfaces-ios-xe-oper:oper-state": "enumeration",
+  "interfaces-ios-xe-oper:ietf-intf-type": "enumeration",
+  "interfaces-ios-xe-oper:media-type-class": "enumeration",
+  "interfaces-ios-xe-oper:dot3-stats-version": "enumeration",
+  "interfaces-ios-xe-oper:serial-crc": "enumeration",
+  "interfaces-ios-xe-oper:subrate-speed": "enumeration",
+  "interfaces-ios-xe-oper:t1e1-loopback-mode": "enumeration",
+  "interfaces-ios-xe-oper:signal-status": "enumeration",
+  "interfaces-ios-xe-oper:idle-character-type": "enumeration",
+  "interfaces-ios-xe-oper:sc-filter-state": "enumeration",
+  "interfaces-ios-xe-oper:sc-suppress-type": "enumeration"
+}
