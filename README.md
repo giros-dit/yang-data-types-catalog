@@ -3,7 +3,7 @@ YANG modules data types catalog with conversions to base/primitive YANG types.
 
 This repository provides a registry or catalog of data types defined in YANG modules with the corresponding conversion to base or primitive YANG types.
 The catalog consists of JSON files that contain key-value dictionaries with the data types association: the key is the custom data type defined in the YANG module, and the value is the conversion to the primitive YANG type. If there are several conversion steps, from a custom data type to another custom data type, the final conversion result with the primitive type is always given.
-The name of the JSON files consists of the prefix of the corresponding module with the latest revision date as per specified in the YANG module: e.g. `yang@2013-07-15.json`.
+The name of the JSON files consists of the name of the corresponding YANG module with the latest revision date as per specified in it: e.g. `ietf-yang-types@2023-01-23.yang`.
 
 ## Primitive YANG types
 A list of the base (primitive) YANG types is attached below:
