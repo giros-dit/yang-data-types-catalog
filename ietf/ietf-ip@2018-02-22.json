@@ -1,4 +1,18 @@
 {
-  "ip:ip-address-origin": "enumeration",
-  "ip:neighbor-origin": "enumeration"
+    "name": "ietf-ip",
+    "prefix": "ip",
+    "namespace": "urn:ietf:params:xml:ns:yang:ietf-ip",
+    "revision": "2018-02-22",
+    "catalog_file_version": "0.0.1",
+    "pyang_data_types_discoverer_version": "0.0.1",
+    "typedefs": {
+        "ip-address-origin": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "neighbor-origin": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        }
+    }
 }

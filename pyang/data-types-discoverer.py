@@ -27,7 +27,7 @@ class DataTypesDiscovererPlugin(plugin.PyangPlugin):
         plugin.PyangPlugin.__init__(self, 'data-types-discoverer')
     
     def add_output_format(self, fmts):
-        self.multiple_modules = False
+        self.multiple_modules = True
         fmts['data-types-discoverer'] = self
     
     def add_opts(self, optparser):

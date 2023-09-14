@@ -1,0 +1,54 @@
+{
+    "name": "netflow-v9",
+    "prefix": "net-v9",
+    "namespace": "http://data-aggregator.com/ns/netflow",
+    "revision": "2021-10-08",
+    "catalog_file_version": "0.0.1",
+    "pyang_data_types_discoverer_version": "0.0.1",
+    "typedefs": {
+        "prefix-length-ipv4": {
+            "type": "uint8",
+            "primitive_type": "uint8"
+        },
+        "prefix-length-ipv6": {
+            "type": "uint8",
+            "primitive_type": "uint8"
+        },
+        "protocol-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "engine-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "top-label-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "forwarding-status-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "igmp-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "sampling-mode-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "ip-version-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "direction-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "tcp-flags-type": {
+            "type": "bits",
+            "primitive_type": "bits"
+        }
+    }
+}

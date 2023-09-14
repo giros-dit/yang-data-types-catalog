@@ -1,34 +1,138 @@
 {
-  "yang:counter32": "uint32",
-  "yang:zero-based-counter32": "uint32",
-  "yang:counter64": "uint64",
-  "yang:zero-based-counter64": "uint64",
-  "yang:gauge32": "uint32",
-  "yang:gauge64": "uint64",
-  "yang:object-identifier": "string",
-  "yang:object-identifier-128": "string",
-  "yang:date-and-time": "string",
-  "yang:date-with-zone-offset": "string",
-  "yang:date-no-zone": "string",
-  "yang:time-with-zone-offset": "string",
-  "yang:time-no-zone": "string",
-  "yang:hours32": "int32",
-  "yang:minutes32": "int32",
-  "yang:seconds32": "int32",
-  "yang:centiseconds32": "int32",
-  "yang:miliseconds32": "int32",
-  "yang:microseconds32": "int32",
-  "yang:microseconds64": "int64",
-  "yang:nanoseconds32": "int32",
-  "yang:nanoseconds64": "int64",
-  "yang:timeticks": "uint32",
-  "yang:timestamp": "uint32",
-  "yang:phys-address": "string",
-  "yang:mac-address": "string",
-  "yang:xpath1.0": "string",
-  "yang:hex-string": "string",
-  "yang:uuid": "string",
-  "yang:dotted-quad": "string",
-  "yang:language-tag": "string",
-  "yang:yang-identifier": "string"
+    "name": "ietf-yang-types",
+    "prefix": "yang",
+    "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
+    "revision": "2023-01-23",
+    "catalog_file_version": "0.0.1",
+    "pyang_data_types_discoverer_version": "0.0.1",
+    "typedefs": {
+        "counter32": {
+            "type": "uint32",
+            "primitive_type": "uint32"
+        },
+        "zero-based-counter32": {
+            "type": "counter32",
+            "primitive_type": "uint32"
+        },
+        "counter64": {
+            "type": "uint64",
+            "primitive_type": "uint64"
+        },
+        "zero-based-counter64": {
+            "type": "counter64",
+            "primitive_type": "uint64"
+        },
+        "gauge32": {
+            "type": "uint32",
+            "primitive_type": "uint32"
+        },
+        "gauge64": {
+            "type": "uint64",
+            "primitive_type": "uint64"
+        },
+        "object-identifier": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "object-identifier-128": {
+            "type": "object-identifier",
+            "primitive_type": "string"
+        },
+        "date-and-time": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "date-with-zone-offset": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "date-no-zone": {
+            "type": "date-with-zone-offset",
+            "primitive_type": "string"
+        },
+        "time-with-zone-offset": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "time-no-zone": {
+            "type": "time-with-zone-offset",
+            "primitive_type": "string"
+        },
+        "hours32": {
+            "type": "int32",
+            "primitive_type": "int32"
+        },
+        "minutes32": {
+            "type": "int32",
+            "primitive_type": "int32"
+        },
+        "seconds32": {
+            "type": "int32",
+            "primitive_type": "int32"
+        },
+        "centiseconds32": {
+            "type": "int32",
+            "primitive_type": "int32"
+        },
+        "milliseconds32": {
+            "type": "int32",
+            "primitive_type": "int32"
+        },
+        "microseconds32": {
+            "type": "int32",
+            "primitive_type": "int32"
+        },
+        "microseconds64": {
+            "type": "int64",
+            "primitive_type": "int64"
+        },
+        "nanoseconds32": {
+            "type": "int32",
+            "primitive_type": "int32"
+        },
+        "nanoseconds64": {
+            "type": "int64",
+            "primitive_type": "int64"
+        },
+        "timeticks": {
+            "type": "uint32",
+            "primitive_type": "uint32"
+        },
+        "timestamp": {
+            "type": "timeticks",
+            "primitive_type": "uint32"
+        },
+        "phys-address": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "mac-address": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "xpath1.0": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "hex-string": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "uuid": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "dotted-quad": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "language-tag": {
+            "type": "string",
+            "primitive_type": "string"
+        },
+        "yang-identifier": {
+            "type": "string",
+            "primitive_type": "string"
+        }
+    }
 }

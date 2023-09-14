@@ -1,21 +1,82 @@
 {
-  "interfaces-ios-xe-oper:qos-match-type": "enumeration",
-  "interfaces-ios-xe-oper:thresh-unit": "enumeration",
-  "interfaces-ios-xe-oper:qos-direction": "enumeration",
-  "interfaces-ios-xe-oper:aggregation-type": "enumeration",
-  "interfaces-ios-xe-oper:intf-state": "enumeration",
-  "interfaces-ios-xe-oper:ether-duplex": "enumeration",
-  "interfaces-ios-xe-oper:ether-speed": "enumeration",
-  "interfaces-ios-xe-oper:qos-direction": "enumeration",
-  "interfaces-ios-xe-oper:oper-state": "enumeration",
-  "interfaces-ios-xe-oper:ietf-intf-type": "enumeration",
-  "interfaces-ios-xe-oper:media-type-class": "enumeration",
-  "interfaces-ios-xe-oper:dot3-stats-version": "enumeration",
-  "interfaces-ios-xe-oper:serial-crc": "enumeration",
-  "interfaces-ios-xe-oper:subrate-speed": "enumeration",
-  "interfaces-ios-xe-oper:t1e1-loopback-mode": "enumeration",
-  "interfaces-ios-xe-oper:signal-status": "enumeration",
-  "interfaces-ios-xe-oper:idle-character-type": "enumeration",
-  "interfaces-ios-xe-oper:sc-filter-state": "enumeration",
-  "interfaces-ios-xe-oper:sc-suppress-type": "enumeration"
+    "name": "Cisco-IOS-XE-interfaces-oper",
+    "prefix": "interfaces-ios-xe-oper",
+    "namespace": "http://cisco.com/ns/yang/Cisco-IOS-XE-interfaces-oper",
+    "revision": "2021-03-01",
+    "catalog_file_version": "0.0.1",
+    "pyang_data_types_discoverer_version": "0.0.1",
+    "typedefs": {
+        "qos-match-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "thresh-unit": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "qos-direction": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "aggregation-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "intf-state": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "ether-duplex": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "ether-speed": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "oper-state": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "ietf-intf-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "media-type-class": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "dot3-stats-versions": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "serial-crc": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "subrate-speed": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "t1e1-loopback-mode": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "signal-status": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "idle-character-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "sc-filter-state": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "sc-suppress-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        }
+    }
 }

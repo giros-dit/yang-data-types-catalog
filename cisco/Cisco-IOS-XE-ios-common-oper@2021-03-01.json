@@ -1,0 +1,34 @@
+{
+    "name": "Cisco-IOS-XE-ios-common-oper",
+    "prefix": "ios-common-ios-xe-oper",
+    "namespace": "http://cisco.com/ns/yang/Cisco-IOS-XE-ios-common-oper",
+    "revision": "2021-03-01",
+    "catalog_file_version": "0.0.1",
+    "pyang_data_types_discoverer_version": "0.0.1",
+    "typedefs": {
+        "ios-snpa-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "ios-encaps-type": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "ios-linktype": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "port-error-code": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "port-err-reason": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        },
+        "notification-severity": {
+            "type": "enumeration",
+            "primitive_type": "enumeration"
+        }
+    }
+}
