@@ -1,17 +1,15 @@
 {
-    "name": "ietf-ip",
-    "prefix": "ip",
-    "namespace": "urn:ietf:params:xml:ns:yang:ietf-ip",
-    "revision": "2018-02-22",
-    "catalog_file_version": "0.0.1",
-    "pyang_data_types_discoverer_version": "0.0.1",
-    "typedefs": {
+    "module_name": "ietf-ip",
+    "module_prefix": "ip",
+    "module_namespace": "urn:ietf:params:xml:ns:yang:ietf-ip",
+    "module_revision": "2018-02-22",
+    "module_typedefs": {
         "ip-address-origin": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "neighbor-origin": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         }
     }

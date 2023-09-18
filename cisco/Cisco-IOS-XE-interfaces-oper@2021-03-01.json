@@ -1,81 +1,79 @@
 {
-    "name": "Cisco-IOS-XE-interfaces-oper",
-    "prefix": "interfaces-ios-xe-oper",
-    "namespace": "http://cisco.com/ns/yang/Cisco-IOS-XE-interfaces-oper",
-    "revision": "2021-03-01",
-    "catalog_file_version": "0.0.1",
-    "pyang_data_types_discoverer_version": "0.0.1",
-    "typedefs": {
+    "module_name": "Cisco-IOS-XE-interfaces-oper",
+    "module_prefix": "interfaces-ios-xe-oper",
+    "module_namespace": "http://cisco.com/ns/yang/Cisco-IOS-XE-interfaces-oper",
+    "module_revision": "2021-03-01",
+    "module_typedefs": {
         "qos-match-type": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "thresh-unit": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "qos-direction": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "aggregation-type": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "intf-state": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ether-duplex": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ether-speed": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "oper-state": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ietf-intf-type": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "media-type-class": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "dot3-stats-versions": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "serial-crc": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "subrate-speed": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "t1e1-loopback-mode": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "signal-status": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "idle-character-type": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "sc-filter-state": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "sc-suppress-type": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         }
     }

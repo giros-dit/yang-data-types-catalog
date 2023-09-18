@@ -1,13 +1,11 @@
 {
-    "name": "netflow-v9-agg",
-    "prefix": "net-v9-agg",
-    "namespace": "http://data-aggregator.com/ns/netflow-aggregated",
-    "revision": "2022-03-02",
-    "catalog_file_version": "0.0.1",
-    "pyang_data_types_discoverer_version": "0.0.1",
-    "typedefs": {
+    "module_name": "netflow-v9-agg",
+    "module_prefix": "net-v9-agg",
+    "module_namespace": "http://data-aggregator.com/ns/netflow-aggregated",
+    "module_revision": "2022-03-02",
+    "module_typedefs": {
         "per-decimal": {
-            "type": "decimal64",
+            "defined_type": "decimal64",
             "primitive_type": "decimal64"
         }
     }

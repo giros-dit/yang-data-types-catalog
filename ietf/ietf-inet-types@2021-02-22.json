@@ -1,97 +1,95 @@
 {
-    "name": "ietf-inet-types",
-    "prefix": "inet",
-    "namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
-    "revision": "2021-02-22",
-    "catalog_file_version": "0.0.1",
-    "pyang_data_types_discoverer_version": "0.0.1",
-    "typedefs": {
+    "module_name": "ietf-inet-types",
+    "module_prefix": "inet",
+    "module_namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
+    "module_revision": "2021-02-22",
+    "module_typedefs": {
         "ip-version": {
-            "type": "enumeration",
+            "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "dscp": {
-            "type": "uint8",
+            "defined_type": "uint8",
             "primitive_type": "uint8"
         },
         "ipv6-flow-label": {
-            "type": "uint32",
+            "defined_type": "uint32",
             "primitive_type": "uint32"
         },
         "port-number": {
-            "type": "uint16",
+            "defined_type": "uint16",
             "primitive_type": "uint16"
         },
         "as-number": {
-            "type": "uint32",
+            "defined_type": "uint32",
             "primitive_type": "uint32"
         },
         "ip-address": {
-            "type": "union",
+            "defined_type": "union",
             "primitive_type": "union"
         },
         "ipv4-address": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "ipv6-address": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "ip-address-no-zone": {
-            "type": "union",
+            "defined_type": "union",
             "primitive_type": "union"
         },
         "ipv4-address-no-zone": {
-            "type": "ipv4-address",
+            "defined_type": "inet:ipv4-address",
             "primitive_type": "string"
         },
         "ipv6-address-no-zone": {
-            "type": "ipv6-address",
+            "defined_type": "inet:ipv6-address",
             "primitive_type": "string"
         },
         "ip-prefix": {
-            "type": "union",
+            "defined_type": "union",
             "primitive_type": "union"
         },
         "ipv4-prefix": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "ipv6-prefix": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "ip-address-and-prefix": {
-            "type": "union",
+            "defined_type": "union",
             "primitive_type": "union"
         },
         "ipv4-address-and-prefix": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "ipv6-address-and-prefix": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "domain-name": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "host-name": {
-            "type": "domain-name",
+            "defined_type": "domain-name",
             "primitive_type": "string"
         },
         "host": {
-            "type": "union",
+            "defined_type": "union",
             "primitive_type": "union"
         },
         "uri": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "email-address": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         }
     }

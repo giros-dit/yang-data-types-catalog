@@ -1,137 +1,135 @@
 {
-    "name": "ietf-yang-types",
-    "prefix": "yang",
-    "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
-    "revision": "2023-01-23",
-    "catalog_file_version": "0.0.1",
-    "pyang_data_types_discoverer_version": "0.0.1",
-    "typedefs": {
+    "module_name": "ietf-yang-types",
+    "module_prefix": "yang",
+    "module_namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
+    "module_revision": "2023-01-23",
+    "module_typedefs": {
         "counter32": {
-            "type": "uint32",
+            "defined_type": "uint32",
             "primitive_type": "uint32"
         },
         "zero-based-counter32": {
-            "type": "counter32",
+            "defined_type": "yang:counter32",
             "primitive_type": "uint32"
         },
         "counter64": {
-            "type": "uint64",
+            "defined_type": "uint64",
             "primitive_type": "uint64"
         },
         "zero-based-counter64": {
-            "type": "counter64",
+            "defined_type": "yang:counter64",
             "primitive_type": "uint64"
         },
         "gauge32": {
-            "type": "uint32",
+            "defined_type": "uint32",
             "primitive_type": "uint32"
         },
         "gauge64": {
-            "type": "uint64",
+            "defined_type": "uint64",
             "primitive_type": "uint64"
         },
         "object-identifier": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "object-identifier-128": {
-            "type": "object-identifier",
+            "defined_type": "object-identifier",
             "primitive_type": "string"
         },
         "date-and-time": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "date-with-zone-offset": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "date-no-zone": {
-            "type": "date-with-zone-offset",
+            "defined_type": "date-with-zone-offset",
             "primitive_type": "string"
         },
         "time-with-zone-offset": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "time-no-zone": {
-            "type": "time-with-zone-offset",
+            "defined_type": "time-with-zone-offset",
             "primitive_type": "string"
         },
         "hours32": {
-            "type": "int32",
+            "defined_type": "int32",
             "primitive_type": "int32"
         },
         "minutes32": {
-            "type": "int32",
+            "defined_type": "int32",
             "primitive_type": "int32"
         },
         "seconds32": {
-            "type": "int32",
+            "defined_type": "int32",
             "primitive_type": "int32"
         },
         "centiseconds32": {
-            "type": "int32",
+            "defined_type": "int32",
             "primitive_type": "int32"
         },
         "milliseconds32": {
-            "type": "int32",
+            "defined_type": "int32",
             "primitive_type": "int32"
         },
         "microseconds32": {
-            "type": "int32",
+            "defined_type": "int32",
             "primitive_type": "int32"
         },
         "microseconds64": {
-            "type": "int64",
+            "defined_type": "int64",
             "primitive_type": "int64"
         },
         "nanoseconds32": {
-            "type": "int32",
+            "defined_type": "int32",
             "primitive_type": "int32"
         },
         "nanoseconds64": {
-            "type": "int64",
+            "defined_type": "int64",
             "primitive_type": "int64"
         },
         "timeticks": {
-            "type": "uint32",
+            "defined_type": "uint32",
             "primitive_type": "uint32"
         },
         "timestamp": {
-            "type": "timeticks",
+            "defined_type": "yang:timeticks",
             "primitive_type": "uint32"
         },
         "phys-address": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "mac-address": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "xpath1.0": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "hex-string": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "uuid": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "dotted-quad": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "language-tag": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         },
         "yang-identifier": {
-            "type": "string",
+            "defined_type": "string",
             "primitive_type": "string"
         }
     }
