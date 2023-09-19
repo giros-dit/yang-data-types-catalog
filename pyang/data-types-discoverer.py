@@ -5,7 +5,7 @@ Given a YANG module, it searches for its typedefs, generates their translations 
 primite YANG types and outputs the result in JSON format.
 This plugin is meant to be used with the data types catalog available at https://github.com/giros-dit/yang-data-types-catalog.
 
-Version: 0.0.3.
+Version: 0.0.4.
 
 Author: Networking and Virtualization Research Group (GIROS DIT-UPM) -- https://dit.upm.es/~giros.
 '''
@@ -125,3 +125,4 @@ def generate_output(ctx, modules, fd):
         filename = module_name + "@" + module_latest_revision + ".json"
         file = open(filename, 'w')
         file.write(json.dumps(data, indent=4) + '\n')
+        file.close()
