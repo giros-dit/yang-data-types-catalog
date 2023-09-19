@@ -2,17 +2,16 @@
 pyang plugin -- YANG data types discoverer.
 
 Given a YANG module, it searches for its typedefs, generates their translations to
-primite YANG types and outputs the result in JSON format.
+primitive YANG types and outputs the result in JSON format.
 This plugin is meant to be used with the data types catalog available at https://github.com/giros-dit/yang-data-types-catalog.
 
-Version: 0.0.4.
+Version: 0.0.5.
 
 Author: Networking and Virtualization Research Group (GIROS DIT-UPM) -- https://dit.upm.es/~giros.
 '''
 
 import optparse
 import pdb
-import re
 import sys
 import json
 
@@ -32,7 +31,7 @@ class DataTypesDiscovererPlugin(plugin.PyangPlugin):
     
     def add_opts(self, optparser):
         optlist = [
-            optparse.make_option('--data-types-discoverer-help', dest='print_data_types_discoverer_help', action='store_true', help='Prints help and usage.')
+            optparse.make_option('--data-types-discoverer-help', dest='print_data_types_discoverer_help', action='store_true', help='Prints help and usage.'),
         ]
         g = optparser.add_option_group('YANG data types discoverer - Execution options')
         g.add_options(optlist)
@@ -55,12 +54,12 @@ def print_data_types_discoverer_help():
     print('''
 Pyang plugin - YANG data types discoverer (data-types-discoverer).
 Given a YANG module, it searches for its typedefs, generates their translations to
-primite YANG types and outputs the result to a JSON file.
-Output file name format is the following: <module_name>@<module_latest_revision>.json.
+primitive YANG types and outputs the result in JSON format.
+The output is written to stdout and, therefore, printed to the terminal. If you want the output to be written to a file, just redirect it accordingly.
 This plugin is meant to be used with the data types catalog available at https://github.com/giros-dit/yang-data-types-catalog.
 
 Usage:
-pyang -f data-types-discoverer <module.yang>
+pyang -f data-types-discoverer <module.yang> [> <output_file.json>]
     ''')
 
 def generate_output(ctx, modules, fd):
@@ -122,7 +121,6 @@ def generate_output(ctx, modules, fd):
                         typedef_primitive_type = typedef_type
                     data["module_typedefs"][typedef_name]["primitive_type"] = typedef_primitive_type
         
-        filename = module_name + "@" + module_latest_revision + ".json"
-        file = open(filename, 'w')
-        file.write(json.dumps(data, indent=4) + '\n')
-        file.close()
+        fd.write(json.dumps(data, indent=4) + '\n')
+
+        fd.close()

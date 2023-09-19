@@ -34,15 +34,17 @@ The discovery of module `typedefs`, their conversion to primitive types and the 
 ## Using the `pyang` plugin
 You can find, view and download the plugin from the [`pyang`](pyang/data-types-discoverer.py) subdirectory.
 
-Once downloaded, move it to the directory of `pyang` plugins, which is normally located under the following path in your Unix filesystem: `/home/<your_username>/.local/lib/<python_version>/site-packages/pyang/plugins/`.
+Once downloaded, move it to `pyang`'s plugins directory, which is normally located under the following path in your Unix filesystem: `/home/<your_username>/.local/lib/<python_version>/site-packages/pyang/plugins/`.
 
 To run the plugin, execute the following command:
 
 ```
-$ pyang -f data-types-discoverer <path_to_yang_module>
+$ pyang -f data-types-discoverer <path_to_yang_module.yang> [> <path_to_json_output_file.json>]
 ```
 
 Alternatively, you can run `pyang` and specify a custom directory path for plugins. In this case, use the `--plugindir` option and point to the path of the folder where you have stored the plugin.
+
+The output is written to `stdout` and, therefore, printed to the terminal. If you want the output to be written to a file, just use the `>` redirection accordingly.
 
 ## Primitive YANG types
 A list of the base (primitive) YANG types is attached below:
@@ -65,7 +67,6 @@ A list of the base (primitive) YANG types is attached below:
 |     binary    |         Sequence of binary data/octets         |
 |     empty     |                  Unvalued type                 |
 |     union     |   Unrestricted union of other primitive types  |
-
 
 ## References
 - YANG Data Types - YumaWorks Support: https://support.yumaworks.com/support/solutions/folders/1000233920.
