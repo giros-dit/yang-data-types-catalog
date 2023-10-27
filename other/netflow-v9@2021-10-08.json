@@ -5,46 +5,57 @@
     "module_revision": "2021-10-08",
     "module_typedefs": {
         "prefix-length-ipv4": {
+            "description": "The length of subnet prefix in IPv4",
             "defined_type": "uint8",
             "primitive_type": "uint8"
         },
         "prefix-length-ipv6": {
+            "description": "The length of the subnet prefix in IPv6",
             "defined_type": "uint8",
             "primitive_type": "uint8"
         },
         "protocol-type": {
+            "description": "Possible values of IP protocol byte",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "engine-type": {
+            "description": "Possible types of flow switching engine for Netflow v9",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "top-label-type": {
+            "description": "Possible types of MPLS Top Label for Netflow v9",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "forwarding-status-type": {
+            "description": "Possible types of forwarding status for Netflow v9",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "igmp-type": {
+            "description": "Possible values of Internet Group Management Protocol (IGMP) packet type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "sampling-mode-type": {
+            "description": "Possible modes of sampling in Netflow v9",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ip-version-type": {
+            "description": "Possible versions of IP Protocol",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "direction-type": {
+            "description": "Possible Flow directions in Netflow v9",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "tcp-flags-type": {
+            "description": "Possible TCP flags seen in an IP flow",
             "defined_type": "bits",
             "primitive_type": "bits"
         }

@@ -5,26 +5,32 @@
     "module_revision": "2021-03-01",
     "module_typedefs": {
         "ios-snpa-type": {
+            "description": "SNPA Type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ios-encaps-type": {
+            "description": "Encapsulation Type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ios-linktype": {
+            "description": "Link Type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "port-error-code": {
+            "description": "Type of the error when port goes to error state",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "port-err-reason": {
+            "description": "Error disable reason",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "notification-severity": {
+            "description": "Notification severity",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         }

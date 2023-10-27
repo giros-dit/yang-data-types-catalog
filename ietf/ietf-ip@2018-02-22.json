@@ -5,10 +5,12 @@
     "module_revision": "2018-02-22",
     "module_typedefs": {
         "ip-address-origin": {
+            "description": "The origin of an address.",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "neighbor-origin": {
+            "description": "The origin of a neighbor entry.",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         }

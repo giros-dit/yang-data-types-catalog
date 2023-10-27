@@ -5,74 +5,92 @@
     "module_revision": "2021-03-01",
     "module_typedefs": {
         "qos-match-type": {
+            "description": "QOS match type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "thresh-unit": {
+            "description": "Units of threshold",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "qos-direction": {
+            "description": "QoS direction indication",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "aggregation-type": {
+            "description": "Type to define the lag-type, i.e., how the LAG is defined and managed",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "intf-state": {
+            "description": "The desired state of the interface. This leaf has the same read semantics as ifAdminStatus. Reference: RFC 2863: The Interfaces Group MIB - ifAdminStatus",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ether-duplex": {
+            "description": "The duplex setting of the interface",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ether-speed": {
+            "description": "The speed setting of the interface",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "oper-state": {
+            "description": "The current operational state of the interface. This leaf has the same semantics as ifOperStatus. Reference: RFC 2863: The Interfaces Group MIB - ifOperStatus",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "ietf-intf-type": {
+            "description": "IANAifType This data type is used as the syntax of the ifType object in the (updated) definition of MIB-II's ifTable",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "media-type-class": {
+            "description": "Maximum possible values for media type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "dot3-stats-versions": {
+            "description": "The version of dot 3 error counters.",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "serial-crc": {
+            "description": "The Cyclic Redundancy Code type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "subrate-speed": {
+            "description": "The subrate on a serial interface",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "t1e1-loopback-mode": {
+            "description": "Loopback mode type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "signal-status": {
+            "description": "Synchronous serial interface signal status",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "idle-character-type": {
+            "description": "Synchronous serial idle character",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "sc-filter-state": {
+            "description": "Storm control filter state",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         },
         "sc-suppress-type": {
+            "description": "Storm control suppression type",
             "defined_type": "enumeration",
             "primitive_type": "enumeration"
         }

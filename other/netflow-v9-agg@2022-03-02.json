@@ -5,6 +5,7 @@
     "module_revision": "2022-03-02",
     "module_typedefs": {
         "per-decimal": {
+            "description": "Decimal value used to describe all values that have a rate: (per-packet), (per-second)",
             "defined_type": "decimal64",
             "primitive_type": "decimal64"
         }

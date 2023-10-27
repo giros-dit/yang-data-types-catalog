@@ -1,0 +1,13 @@
+{
+    "module_name": "ietf-interfaces",
+    "module_prefix": "if",
+    "module_namespace": "urn:ietf:params:xml:ns:yang:ietf-interfaces",
+    "module_revision": "2018-02-20",
+    "module_typedefs": {
+        "interface-ref": {
+            "description": "This type is used by data models that need to reference interfaces.",
+            "defined_type": "leafref",
+            "primitive_type": "leafref"
+        }
+    }
+}
