@@ -5,7 +5,7 @@ Given a YANG module, it searches for its typedefs, generates their translations 
 primitive YANG types and outputs the result in JSON format.
 This plugin is meant to be used with the data types catalog available at https://github.com/giros-dit/yang-data-types-catalog.
 
-Version: 0.0.8.
+Version: 0.0.9.
 
 Author: Networking and Virtualization Research Group (GIROS DIT-UPM) -- https://dit.upm.es/~giros.
 '''
@@ -38,7 +38,7 @@ class DataTypesDiscovererPlugin(plugin.PyangPlugin):
     
     def setup_ctx(self, ctx):
         if ctx.opts.print_data_types_discoverer_help:
-            print_data_types_discoverer_help()
+            print_help()
             sys.exit(0)
     
     def setup_fmt(self, ctx):
@@ -47,7 +47,7 @@ class DataTypesDiscovererPlugin(plugin.PyangPlugin):
     def emit(self, ctx, modules, fd):
         generate_output(ctx, modules, fd)
 
-def print_data_types_discoverer_help():
+def print_help():
     '''
     Prints help and usage information.
     '''
