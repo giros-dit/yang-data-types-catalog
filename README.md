@@ -40,10 +40,10 @@ You can find, view and download the plugin from the [`pyang`](pyang/data-types-d
 
 Once downloaded, move it to `pyang`'s plugins directory, which is normally located under the following path in your Unix filesystem: `/home/<your_username>/.local/lib/<python_version>/site-packages/pyang/plugins/`.
 
-To run the plugin, execute the following command:
+To execute the plugin, run the following command. You can specify multiple YANG models and the plugin will generate the catalog file for each of one of them:
 
 ```
-$ pyang -f data-types-discoverer <path_to_yang_module.yang>
+$ pyang -f data-types-discoverer <yang_module_1.yang> <yang_module_2.yang> ... <yang_module_N.yang>
 ```
 
 Alternatively, you can run `pyang` and specify a custom directory path for plugins. In this case, use the `--plugindir` option and point to the path of the folder where you have stored the plugin.
