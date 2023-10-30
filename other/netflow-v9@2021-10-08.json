@@ -1,9 +1,10 @@
 {
-    "module_name": "netflow-v9",
-    "module_prefix": "net-v9",
-    "module_namespace": "http://data-aggregator.com/ns/netflow",
-    "module_revision": "2021-10-08",
-    "module_typedefs": {
+    "name": "netflow-v9",
+    "prefix": "net-v9",
+    "namespace": "http://data-aggregator.com/ns/netflow",
+    "latest_revision": "2021-10-08",
+    "description": "YANG model to represent the information collected in a Netflow version 9 export packet",
+    "typedefs": {
         "prefix-length-ipv4": {
             "description": "The length of subnet prefix in IPv4",
             "defined_type": "uint8",

@@ -1,9 +1,10 @@
 {
-    "module_name": "Cisco-IOS-XE-interfaces-oper",
-    "module_prefix": "interfaces-ios-xe-oper",
-    "module_namespace": "http://cisco.com/ns/yang/Cisco-IOS-XE-interfaces-oper",
-    "module_revision": "2021-03-01",
-    "module_typedefs": {
+    "name": "Cisco-IOS-XE-interfaces-oper",
+    "prefix": "interfaces-ios-xe-oper",
+    "namespace": "http://cisco.com/ns/yang/Cisco-IOS-XE-interfaces-oper",
+    "latest_revision": "2021-03-01",
+    "description": "This module contains a collection of YANG definitions for monitoring the interfaces in a Network Element. Copyright (c) 2016-2020 by Cisco Systems, Inc. All rights reserved.",
+    "typedefs": {
         "qos-match-type": {
             "description": "QOS match type",
             "defined_type": "enumeration",

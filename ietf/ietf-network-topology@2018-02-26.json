@@ -1,0 +1,19 @@
+{
+    "name": "ietf-network-topology",
+    "prefix": "nt",
+    "namespace": "urn:ietf:params:xml:ns:yang:ietf-network-topology",
+    "latest_revision": "2018-02-26",
+    "description": "This module defines a common base model for a network topology, augmenting the base network data model with links to connect nodes, as well as termination points to terminate links on nodes. Copyright (c) 2018 IETF Trust and the persons identified as authors of the code. All rights reserved. Redistribution and use in source and binary forms, with or without modification, is permitted pursuant to, and subject to the license terms contained in, the Simplified BSD License set forth in Section 4.c of the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info). This version of this YANG module is part of RFC 8345; see the RFC itself for full legal notices.",
+    "typedefs": {
+        "link-id": {
+            "description": "An identifier for a link in a topology. The precise structure of the link-id will be up to the implementation. The identifier SHOULD be chosen such that the same link in a real network topology will always be identified through the same identifier, even if the data model is instantiated in separate datastores. An implementation MAY choose to capture semantics in the identifier -- for example, to indicate the type of link and/or the type of topology of which the link is a part.",
+            "defined_type": "uri",
+            "primitive_type": "uri"
+        },
+        "tp-id": {
+            "description": "An identifier for termination points on a node. The precise structure of the tp-id will be up to the implementation. The identifier SHOULD be chosen such that the same termination point in a real network topology will always be identified through the same identifier, even if the data model is instantiated in separate datastores. An implementation MAY choose to capture semantics in the identifier -- for example, to indicate the type of termination point and/or the type of node that contains the termination point.",
+            "defined_type": "uri",
+            "primitive_type": "uri"
+        }
+    }
+}

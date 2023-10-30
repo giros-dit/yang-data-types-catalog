@@ -1,9 +1,10 @@
 {
-    "module_name": "Cisco-IOS-XE-ios-common-oper",
-    "module_prefix": "ios-common-ios-xe-oper",
-    "module_namespace": "http://cisco.com/ns/yang/Cisco-IOS-XE-ios-common-oper",
-    "module_revision": "2021-03-01",
-    "module_typedefs": {
+    "name": "Cisco-IOS-XE-ios-common-oper",
+    "prefix": "ios-common-ios-xe-oper",
+    "namespace": "http://cisco.com/ns/yang/Cisco-IOS-XE-ios-common-oper",
+    "latest_revision": "2021-03-01",
+    "description": "This module contains a collection of YANG definitions for some common IOS structures Copyright (c) 2018-2020 by Cisco Systems, Inc. All rights reserved.",
+    "typedefs": {
         "ios-snpa-type": {
             "description": "SNPA Type",
             "defined_type": "enumeration",

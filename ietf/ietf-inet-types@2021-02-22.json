@@ -1,9 +1,10 @@
 {
-    "module_name": "ietf-inet-types",
-    "module_prefix": "inet",
-    "module_namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
-    "module_revision": "2021-02-22",
-    "module_typedefs": {
+    "name": "ietf-inet-types",
+    "prefix": "inet",
+    "namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
+    "latest_revision": "2021-02-22",
+    "description": "This module contains a collection of generally useful derived YANG data types for Internet addresses and related things. The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'NOT RECOMMENDED', 'MAY', and 'OPTIONAL' in this document are to be interpreted as described in BCP 14 (RFC 2119) (RFC 8174) when, and only when, they appear in all capitals, as shown here. Copyright (c) 2021 IETF Trust and the persons identified as authors of the code. All rights reserved. Redistribution and use in source and binary forms, with or without modification, is permitted pursuant to, and subject to the license terms contained in, the Simplified BSD License set forth in Section 4.c of the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info). This version of this YANG module is part of RFC XXXX; see the RFC itself for full legal notices.",
+    "typedefs": {
         "ip-version": {
             "description": "This value represents the version of the IP protocol. In the value set and its semantics, this type is equivalent to the InetVersion textual convention of the SMIv2.",
             "defined_type": "enumeration",
