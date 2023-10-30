@@ -5,7 +5,7 @@ Given a YANG module, it searches for its typedefs, generates their translations 
 primitive YANG types and outputs the result in JSON format.
 This plugin is meant to be used with the data types catalog available at https://github.com/giros-dit/yang-data-types-catalog.
 
-Version: 0.0.7.
+Version: 0.0.8.
 
 Author: Networking and Virtualization Research Group (GIROS DIT-UPM) -- https://dit.upm.es/~giros.
 '''
@@ -100,14 +100,17 @@ def generate_output(ctx, modules, fd):
     for module in modules:
         data = {}
         module_name = str(module.i_modulename)
-        data["module_name"] = module_name
+        data["name"] = module_name
         module_prefix = str(module.i_prefix)
-        data["module_prefix"] = module_prefix
+        data["prefix"] = module_prefix
         module_namespace = str(module.search_one("namespace").arg)
-        data["module_namespace"] = module_namespace
+        data["namespace"] = module_namespace
         module_latest_revision = str(module.i_latest_revision)
-        data["module_revision"] = module_latest_revision
-        data["module_typedefs"] = {}
+        data["latest_revision"] = module_latest_revision
+        module_description = str(module.search_one("description").arg)\
+            .replace('\n', ' ').replace('  ', ' ')
+        data["description"] = module_description
+        data["typedefs"] = {}
 
         typedefs = module.search("typedef")
         typedefs_dict = {}
@@ -123,9 +126,9 @@ def generate_output(ctx, modules, fd):
                     typedef_description = str(typedef.search_one("description").arg)\
                         .replace('\n', ' ').replace('  ', ' ')
                     typedef_type = str(typedef.search_one("type").arg).split(':')[-1]
-                    data["module_typedefs"][typedef_name] = {}
-                    data["module_typedefs"][typedef_name]["description"] = typedef_description
-                    data["module_typedefs"][typedef_name]["defined_type"] = typedef_type
+                    data["typedefs"][typedef_name] = {}
+                    data["typedefs"][typedef_name]["description"] = typedef_description
+                    data["typedefs"][typedef_name]["defined_type"] = typedef_type
                     if typedef_type not in YANG_PRIMITIVE_TYPES:
                         if typedefs_dict.get(typedef_type) is not None:
                             typedef_primitive_type = typedefs_dict[typedef_type]
@@ -133,7 +136,7 @@ def generate_output(ctx, modules, fd):
                             typedef_primitive_type = typedef_type
                     else:
                         typedef_primitive_type = typedef_type
-                    data["module_typedefs"][typedef_name]["primitive_type"] = typedef_primitive_type
+                    data["typedefs"][typedef_name]["primitive_type"] = typedef_primitive_type
         
         output_file = open(module_name + "@" + module_latest_revision + ".json", "w")
         output_file.write(json.dumps(data, indent=4) + '\n')

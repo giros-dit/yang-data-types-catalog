@@ -7,21 +7,25 @@ by their names and feature their "defined" type and the corresponding conversion
 
 ```
 {
-    "module_name": "<module_name>",
-    "module_prefix": "<module_prefix>",
-    "module_namespace": "<module_namespace_urn",
-    "module_revision": "<module_revision_date>",
-    "module_typedefs": {
+    "name": "<module_name>",
+    "prefix": "<module_prefix>",
+    "namespace": "<module_namespace_urn>",
+    "latest_revision": "<module_latest_revision_date>",
+    "description": "<module_description>,
+    "typedefs": {
         "<typedef-1>": {
+            "description": "<description>",
             "defined_type": "<defined_type>",
             "primitive_type": "<primitive_type>"
         },
         "<typedef-2>": {
+            "description": "<description>",
             "defined_type": "<defined_type>",
             "primitive_type": "<primitive_type>"
         },
         ...
         "<typedef-N>": {
+            "description": "<description>",
             "defined_type": "<defined_type>",
             "primitive_type": "<primitive_type>"
         }
@@ -39,12 +43,12 @@ Once downloaded, move it to `pyang`'s plugins directory, which is normally locat
 To run the plugin, execute the following command:
 
 ```
-$ pyang -f data-types-discoverer <path_to_yang_module.yang> [> <path_to_json_output_file.json>]
+$ pyang -f data-types-discoverer <path_to_yang_module.yang>
 ```
 
 Alternatively, you can run `pyang` and specify a custom directory path for plugins. In this case, use the `--plugindir` option and point to the path of the folder where you have stored the plugin.
 
-The output is written to `stdout` and, therefore, printed to the terminal. If you want the output to be written to a file, just use the `>` redirection accordingly.
+The output is directly written to a JSON file with the following name: `<module_name>@<module_revision>.json`.
 
 ## Primitive YANG types
 A list of the base (primitive) YANG types is attached below:
